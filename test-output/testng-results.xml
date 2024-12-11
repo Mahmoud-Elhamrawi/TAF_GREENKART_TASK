@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-11T14:29:42 EET" name="positive TC" finished-at="2024-12-11T14:29:48 EET" duration-ms="6067">
+    <groups>
+    </groups>
+    <test started-at="2024-12-11T14:29:42 EET" name="addtocart" finished-at="2024-12-11T14:29:48 EET" duration-ms="6067">
+      <class name="TestCases.addToCartTC">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.addToCartTC@4c12331b]" started-at="2024-12-11T14:29:42 EET" name="setUp" finished-at="2024-12-11T14:29:47 EET" duration-ms="4616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addToCartTC()[pri:0, instance:TestCases.addToCartTC@4c12331b]" started-at="2024-12-11T14:29:47 EET" name="addToCartTC" finished-at="2024-12-11T14:29:48 EET" duration-ms="1138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.addToCartTC@4c12331b]" started-at="2024-12-11T14:29:48 EET" name="tearDown" finished-at="2024-12-11T14:29:48 EET" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.addToCartTC -->
+    </test> <!-- addtocart -->
+  </suite> <!-- positive TC -->
+</testng-results>

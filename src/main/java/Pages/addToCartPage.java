@@ -19,7 +19,6 @@ public class addToCartPage {
     List<WebElement> productSelected ;
     String []itemNeed = {"Brocolli","Cauliflower","Cucumber","Beetroot"};
    public static int  p= 0 ;
-
     private final  By itemsNames = By.xpath("//h4[@class=\"product-name\"]") ;
     private final By cartIconNumbers = By.xpath("(//div/table//tr/td/strong)[1]");
     private final By cartIconPrice = By.xpath("(//div/table//tr/td/strong)[2]");
@@ -29,7 +28,6 @@ public class addToCartPage {
         productSelected = driver.findElements(itemsNames); //30
         for(int i = 0 ; i<productSelected.size() ; i++)
         {
-
             String [] names = productSelected.get(i).getText().split("-");
             String itemText = names[0].trim();
             List itemList = Arrays.asList(itemNeed);
