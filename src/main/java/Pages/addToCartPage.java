@@ -3,7 +3,10 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
 
@@ -18,7 +21,7 @@ public class addToCartPage {
 
     List<WebElement> productSelected ;
     String []itemNeed = {"Brocolli","Cauliflower","Cucumber","Beetroot"};
-   public static int  p= 0 ;
+    public static  int  p =0 ;
     private final  By itemsNames = By.xpath("//h4[@class=\"product-name\"]") ;
     private final By cartIconNumbers = By.xpath("(//div/table//tr/td/strong)[1]");
     private final By cartIconPrice = By.xpath("(//div/table//tr/td/strong)[2]");
@@ -33,6 +36,7 @@ public class addToCartPage {
             List itemList = Arrays.asList(itemNeed);
       if(itemList.contains(itemText))
             {
+                new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='product-action']/button")));
                 driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
                 p+=Integer.parseInt(driver.findElements(priceItemOnPordCard).get(i).getText());
             }
@@ -74,6 +78,11 @@ public class addToCartPage {
         return cartIconPrice().equals(String.valueOf(p));
     }
 
+
+    public void reAssignPrice()
+    {
+        p = 0 ;
+    }
 
 
 }

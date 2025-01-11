@@ -43,6 +43,7 @@ public final ThreadLocal<WebDriver> threadLocal = new ThreadLocal<>();
                .adding();
         Assert.assertTrue(new addToCartPage(threadLocal.get()).compareNumberItemSelected());
         Assert.assertTrue(new addToCartPage(threadLocal.get()).comparePricesItemSelected());
+        new addToCartPage(threadLocal.get()).reAssignPrice();
 
     }
 

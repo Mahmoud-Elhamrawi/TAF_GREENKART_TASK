@@ -1,25 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-11T14:29:42 EET" name="positive TC" finished-at="2024-12-11T14:29:48 EET" duration-ms="6067">
+  <suite started-at="2025-01-11T13:01:27 EET" name="positive TC" finished-at="2025-01-11T13:02:10 EET" duration-ms="43505">
     <groups>
     </groups>
-    <test started-at="2024-12-11T14:29:42 EET" name="addtocart" finished-at="2024-12-11T14:29:48 EET" duration-ms="6067">
+    <test started-at="2025-01-11T13:01:27 EET" name="addtocartchrome" finished-at="2025-01-11T13:01:41 EET" duration-ms="14304">
       <class name="TestCases.addToCartTC">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.addToCartTC@4c12331b]" started-at="2024-12-11T14:29:42 EET" name="setUp" finished-at="2024-12-11T14:29:47 EET" duration-ms="4616" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.addToCartTC@62150f9e]" started-at="2025-01-11T13:01:27 EET" name="setUp" finished-at="2025-01-11T13:01:40 EET" duration-ms="12584" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addToCartTC()[pri:0, instance:TestCases.addToCartTC@4c12331b]" started-at="2024-12-11T14:29:47 EET" name="addToCartTC" finished-at="2024-12-11T14:29:48 EET" duration-ms="1138" status="PASS">
+        <test-method signature="addToCartTC()[pri:0, instance:TestCases.addToCartTC@62150f9e]" started-at="2025-01-11T13:01:40 EET" name="addToCartTC" finished-at="2025-01-11T13:01:41 EET" duration-ms="1444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartTC -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.addToCartTC@4c12331b]" started-at="2024-12-11T14:29:48 EET" name="tearDown" finished-at="2024-12-11T14:29:48 EET" duration-ms="258" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.addToCartTC@62150f9e]" started-at="2025-01-11T13:01:41 EET" name="tearDown" finished-at="2025-01-11T13:01:41 EET" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.addToCartTC -->
-    </test> <!-- addtocart -->
+    </test> <!-- addtocartchrome -->
+    <test started-at="2025-01-11T13:01:41 EET" name="addtocartfirefox" finished-at="2025-01-11T13:01:59 EET" duration-ms="17615">
+      <class name="TestCases.addToCartTC">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.addToCartTC@7b2bbc3]" started-at="2025-01-11T13:01:41 EET" name="setUp" finished-at="2025-01-11T13:01:55 EET" duration-ms="13849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addToCartTC()[pri:0, instance:TestCases.addToCartTC@7b2bbc3]" started-at="2025-01-11T13:01:55 EET" name="addToCartTC" finished-at="2025-01-11T13:01:57 EET" duration-ms="2042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.addToCartTC@7b2bbc3]" started-at="2025-01-11T13:01:57 EET" name="tearDown" finished-at="2025-01-11T13:01:59 EET" duration-ms="1720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.addToCartTC -->
+    </test> <!-- addtocartfirefox -->
+    <test started-at="2025-01-11T13:01:59 EET" name="addtocartedge" finished-at="2025-01-11T13:02:10 EET" duration-ms="11502">
+      <class name="TestCases.addToCartTC">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:TestCases.addToCartTC@3e694b3f]" started-at="2025-01-11T13:01:59 EET" name="setUp" finished-at="2025-01-11T13:02:07 EET" duration-ms="8194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addToCartTC()[pri:0, instance:TestCases.addToCartTC@3e694b3f]" started-at="2025-01-11T13:02:07 EET" name="addToCartTC" finished-at="2025-01-11T13:02:09 EET" duration-ms="2042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTC -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.addToCartTC@3e694b3f]" started-at="2025-01-11T13:02:09 EET" name="tearDown" finished-at="2025-01-11T13:02:10 EET" duration-ms="1259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.addToCartTC -->
+    </test> <!-- addtocartedge -->
   </suite> <!-- positive TC -->
 </testng-results>
